@@ -1,18 +1,24 @@
 import React, { Component } from "react";
-import profilePic from './mufaddal.jpg'
+import profilePic from '../images/mufaddal.jpg'
 import '../scss/_base.scss'
+
+
 
 
 export default class Home extends Component {
     render(){
         return(
             <React.Fragment>
-                <div className="column small-3 w3-margin-top">
-                    <img className="thumbnail" src={profilePic} alt="Mufaddal Motorwala"/>
-                </div>
-                <div className="column small-9 w3-margin-top">
-                    <h1>Mufaddal Motorwala</h1>
-                    <h3>Front-end Developer</h3>
+                <div className="grid-container">
+                    <div className="grid-x">
+                        <div className="cell small-3">
+                            <img className="thumbnail" src={profilePic} alt="Mufaddal Motorwala"/>
+                        </div>
+                        <div className="cell small-9">
+                            <h1>Mufaddal Motorwala</h1>
+                            <h3>Front-End Developer</h3>
+                        </div>
+                    </div>
                 </div>
             </React.Fragment>
         )
