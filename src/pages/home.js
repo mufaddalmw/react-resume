@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import profilePic from './mufaddal.jpg'
+import '../scss/_base.scss'
 
 
 export default class Home extends Component {
