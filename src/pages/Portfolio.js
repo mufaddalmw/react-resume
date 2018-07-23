@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Swiper from 'swiper'
 import img_rbbi from '../images/portfolio-rbbi.jpg'
 import img_adib from '../images/portfolio-adib.jpg'
 import img_ccad from '../images/portfolio-ccad.jpg'
@@ -7,6 +8,16 @@ import img_dubaiholding from '../images/portfolio-dubaiholding.jpg'
 import img_gmis from '../images/portfolio-gmis.jpg'
 
 export default class Portfolio extends Component {
+    initSwiper = () => {
+        new Swiper ('.swiper-container', {
+            slidesPerView: 2,
+        })
+    }
+
+    componentDidUpdate(){
+        this.initSwiper()
+    }
+
     render(){
         return(
             <React.Fragment>

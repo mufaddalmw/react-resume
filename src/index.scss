@@ -1,5 +1,6 @@
 @import '../node_modules/foundation-sites/scss/foundation';
 @import './scss/_settings.scss';
+@import '../node_modules/swiper/dist/css/swiper';
 @include foundation-global-styles;
 @include foundation-typography;
 @include foundation-xy-grid-classes;
