@@ -14,7 +14,7 @@ export default class Portfolio extends Component {
         })
     }
 
-    componentDidUpdate(){
+    componentDidMount(){
         this.initSwiper()
     }
 
