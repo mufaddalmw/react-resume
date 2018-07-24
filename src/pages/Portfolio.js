@@ -8,9 +8,29 @@ import img_dubaiholding from '../images/portfolio-dubaiholding.jpg'
 import img_gmis from '../images/portfolio-gmis.jpg'
 
 export default class Portfolio extends Component {
+    state = {
+        portfolio : [
+            {
+                title: 'RBBideas',
+                image: img_rbbi,
+                url: 'http://rbbideas.com'
+            },
+            {
+                title: 'Abu Dhabi Islamic Bank',
+                image: img_adib,
+                url: 'http://adib.ae'
+            },
+        ]
+    }
+
     initSwiper = () => {
         new Swiper ('.swiper-container', {
             slidesPerView: 2,
+            spaceBetween: 30,
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
         })
     }
 
@@ -29,7 +49,10 @@ export default class Portfolio extends Component {
                                 <a href="http://rbbideas.com/" target="_blank" rel="noopener noreferrer">
                                     <figure>
                                         <img src={img_rbbi} alt="RBBideas" />
-                                        <figcaption>RBBideas</figcaption>
+                                        <figcaption>
+                                            <h2>RBBideas</h2> 
+                                            <span className="button large">View Site</span>
+                                        </figcaption>
                                     </figure>
                                 </a>
                             </div>

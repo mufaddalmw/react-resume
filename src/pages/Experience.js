@@ -29,10 +29,10 @@ export default class Experience extends Component {
         let years = '', months = ''
 
         // if rawyears are greater than 0
-        years = rawyears > 0 ? `${rawyears} yrs ` : null
+        years = rawyears > 0 ? `${rawyears} yrs ` : ''
 
         // if rawmonths are greater than 0
-        months = rawmonths > 0 ? `${rawmonths - rawyears * 12} mos` : null
+        months = rawmonths > 0 ? `${rawmonths - rawyears * 12} mos` : ''
 
         return `${years}${months}`
     }
