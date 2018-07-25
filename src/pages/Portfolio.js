@@ -25,12 +25,14 @@ export default class Portfolio extends Component {
 
     initSwiper = () => {
         new Swiper ('.swiper-container', {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30,
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 0
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                }
             }
+            
         })
     }
 
