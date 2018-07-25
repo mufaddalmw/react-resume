@@ -8,7 +8,7 @@ export default class Skills extends Component {
                     <h1>Skills</h1>
                     <ul>
                         <li>HTML5/CSS3</li>
-                        <li>SCSS, Stylus, BEM</li>
+                        <li>SCSS, Stylus, BEM, Styled Components</li>
                         <li>JavaScript, React, jQuery</li>
                         <li>Foundation, Bootstrap</li>
                         <li>Pug.js (Templating)</li>

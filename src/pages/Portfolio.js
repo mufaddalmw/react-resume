@@ -20,16 +20,41 @@ export default class Portfolio extends Component {
                 image: img_adib,
                 url: 'http://adib.ae'
             },
+            {
+                title: 'Cleveland Clinic Abu Dhabi',
+                image: img_ccad,
+                url: 'https://www.clevelandclinicabudhabi.ae/en/pages/default.aspx'
+            },
+            {
+                title: 'Famous Birthdays',
+                image: img_famous_birthdays,
+                url: 'https://www.famousbirthdays.com'
+            },
+            {
+                title: 'Dubai Holding',
+                image: img_dubaiholding,
+                url: 'https://dubaiholding.com/en'
+            },
+            {
+                title: 'Global Manufacturing & Industrialisation Summit',
+                image: img_gmis,
+                url: 'https://gmisummit.com'
+            },
         ]
     }
 
     initSwiper = () => {
         new Swiper ('.swiper-container', {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
             breakpoints: {
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 }
             }
             
@@ -47,58 +72,25 @@ export default class Portfolio extends Component {
                     <h1>Portfolio</h1>
                     <div className="swiper-container">
                         <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <a href="http://rbbideas.com/" target="_blank" rel="noopener noreferrer">
-                                    <figure>
-                                        <img src={img_rbbi} alt="RBBideas" />
-                                        <figcaption>
-                                            <h2>RBBideas</h2> 
-                                            <span className="button large">View Site</span>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div className="swiper-slide">
-                                <a href="http://adib.ae/" target="_blank" rel="noopener noreferrer">
-                                    <figure>
-                                        <img src={img_adib} alt="Abu Dhabi Islamic Bank" />
-                                        <figcaption>Abu Dhabi Islamic Bank</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div className="swiper-slide">
-                                <a href="https://www.clevelandclinicabudhabi.ae/en/pages/default.aspx" target="_blank" rel="noopener noreferrer">
-                                    <figure>
-                                        <img src={img_ccad} alt="Cleveland Clinic Abu Dhabi" />
-                                        <figcaption>Cleveland Clinic Abu Dhabi</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div className="swiper-slide">
-                                <a href="https://www.famousbirthdays.com/" target="_blank" rel="noopener noreferrer">
-                                    <figure>
-                                        <img src={img_famous_birthdays} alt="Famous Birthdays" />
-                                        <figcaption>Famous Birthdays</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div className="swiper-slide">
-                                <a href="https://dubaiholding.com/en/" target="_blank" rel="noopener noreferrer">
-                                    <figure>
-                                        <img src={img_dubaiholding} alt="Dubai Holding" />
-                                        <figcaption>Dubai Holding</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div className="swiper-slide">
-                                <a href="https://gmisummit.com/" target="_blank" rel="noopener noreferrer">
-                                    <figure>
-                                        <img src={img_gmis} alt="Global Manufacturing &amp; Industrialisation Summit" />
-                                        <figcaption>Global Manufacturing &amp; Industrialisation Summit</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
+                            {
+                                this.state.portfolio.map((item, index) => {
+                                    return (
+                                        <div className="swiper-slide" key={index}>
+                                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                                <figure>
+                                                    <img src={item.image} alt={item.title} />
+                                                    <figcaption>
+                                                        <h2>{item.title}</h2> 
+                                                        <span className="button large">View Site</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
+                        <div className="swiper-pagination"></div>
                     </div>
                 </div>
             </React.Fragment>
