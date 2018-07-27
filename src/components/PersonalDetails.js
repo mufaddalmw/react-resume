@@ -1,5 +1,9 @@
 import React, {Component} from 'react'
 import moment from 'moment'
+import iconGithub from '../images/icon-github.png'
+import iconGithub2x from '../images/icon-github@2x.png'
+import iconLinkedin from '../images/icon-linkedin.png'
+import iconLinkedin2x from '../images/icon-linkedin@2x.png'
 
 export default class PersonalDetails extends Component {
     state = {
@@ -29,7 +33,10 @@ export default class PersonalDetails extends Component {
                 <li><strong>Current Residence:</strong> Dubai, UAE</li>
                 <li><strong>Mobile:</strong> <a href="tel:+971 52 919 8753">+971 52 919 8753</a></li>
                 <li><strong>Email:</strong> <a href="mailto:mufaddal.motorwala@gmail.com">mufaddal.motorwala@gmail.com</a></li>
-                <li><strong>Profiles:</strong></li>
+                <li><strong>Profiles:</strong>
+                    <a href="https://github.com/mufaddalmw" target="_blank" rel="noopener noreferrer"><img src={iconGithub} srcSet={`${iconGithub2x} 2x`} alt="Github"/></a>
+                    <a href="https://www.linkedin.com/in/mufaddalmw/" target="_blank" rel="noopener noreferrer"><img src={iconLinkedin} srcSet={`${iconLinkedin2x} 2x`} alt="Linkedin"/></a>
+                </li>
             </ul>
         )
     }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import profilePic from '../images/mufaddal.jpg'
 import '../scss/_base.scss'
-import PersonalDetails from '../components/PersonalDetails'
+
 
 
 
@@ -18,7 +18,7 @@ export default class Home extends Component {
                         <div className="cell small-9">
                             <h1>Mufaddal Motorwala</h1>
                             <h3>Front-End Developer</h3>
-                            <PersonalDetails/>
+                            
                                 
                         </div>
                     </div>
