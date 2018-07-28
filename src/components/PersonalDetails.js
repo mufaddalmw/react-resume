@@ -4,6 +4,8 @@ import iconGithub from '../images/icon-github.png'
 import iconGithub2x from '../images/icon-github@2x.png'
 import iconLinkedin from '../images/icon-linkedin.png'
 import iconLinkedin2x from '../images/icon-linkedin@2x.png'
+import iconTwitter from '../images/icon-twitter.png'
+import iconTwitter2x from '../images/icon-twitter@2x.png'
 
 export default class PersonalDetails extends Component {
     state = {
@@ -36,6 +38,7 @@ export default class PersonalDetails extends Component {
                 <li><strong>Profiles:</strong>
                     <a href="https://github.com/mufaddalmw" target="_blank" rel="noopener noreferrer"><img src={iconGithub} srcSet={`${iconGithub2x} 2x`} alt="Github"/></a>
                     <a href="https://www.linkedin.com/in/mufaddalmw/" target="_blank" rel="noopener noreferrer"><img src={iconLinkedin} srcSet={`${iconLinkedin2x} 2x`} alt="Linkedin"/></a>
+                    <a href="https://twitter.com/mufaddal_mw" target="_blank" rel="noopener noreferrer"><img src={iconTwitter} srcSet={`${iconTwitter2x} 2x`} alt="Twitter"/></a>
                 </li>
             </ul>
         )

@@ -5,4 +5,7 @@
 @include foundation-typography;
 @include foundation-xy-grid-classes;
 @include foundation-button;
+@include foundation-visibility-classes;
 @import './scss/portfolio';
+@import './scss/nav';
+@import './scss/header';
