@@ -9,17 +9,13 @@ import Skills from './pages/Skills'
 import Education from './pages/Education'
 import Experience from './pages/Experience'
 import Portfolio from './pages/Portfolio'
-import Nav from './components/Nav'
+
 
 
 const PageContent = () => {
     return (
         <Router>
             <React.Fragment>
-                <header className="mainheader grid-container">
-                    <div></div>
-                    <Nav/>
-                </header>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/skills" component={Skills} />

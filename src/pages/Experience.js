@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import moment from 'moment'
+import Header from '../components/Header'
 
 export default class Experience extends Component {
     state = {
@@ -44,6 +45,7 @@ export default class Experience extends Component {
     render(){
         return(
             <React.Fragment>
+                <Header isHomePage={false}/>
                 <div className="grid-container">
                     <h1>Experience</h1>
                     <h4>Front-End Developer <a href="https://www.linkedin.com/company/red-blue-blur-ideas-rbbi-" target="_blank" rel="noopener noreferrer">@RBBideas</a></h4>

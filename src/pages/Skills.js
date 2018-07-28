@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Header from '../components/Header'
 
 export default class Skills extends Component {
     render(){
         return(
             <React.Fragment>
+                <Header isHomePage={false}/>
                 <div className="grid-container">
                     <h1>Skills</h1>
                     <ul>

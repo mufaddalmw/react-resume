@@ -6,6 +6,7 @@ import img_ccad from '../images/portfolio-ccad.jpg'
 import img_famous_birthdays from '../images/portfolio-famous-birthdays.jpg'
 import img_dubaiholding from '../images/portfolio-dubaiholding.jpg'
 import img_gmis from '../images/portfolio-gmis.jpg'
+import Header from '../components/Header'
 
 export default class Portfolio extends Component {
     state = {
@@ -68,6 +69,7 @@ export default class Portfolio extends Component {
     render(){
         return(
             <React.Fragment>
+                <Header isHomePage={false}/>
                 <div className="grid-container">
                     <h1>Portfolio</h1>
                     <div className="swiper-container">
