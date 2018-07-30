@@ -6,9 +6,9 @@
     }
     
     &__item {
-        margin: 0 10px;
+        margin: rem-calc(0 10px);
         a {
-            padding: 10px;
+            padding: rem-calc(10px);
             display: block;
         }
     }
@@ -17,7 +17,7 @@
         &.is-open {
             @include breakpoint(small only) {
                 .nav-wrapper {
-                    width: 250px;
+                    width: rem-calc(250px);
                 }
 
                 .offcanvas-overlay {
@@ -45,7 +45,7 @@
 }
 
 .menu-icon {
-    width: 34px;
+    width: rem-calc(34px);
     @extend .show-for-small-only ;
 }
 .offcanvas-overlay {

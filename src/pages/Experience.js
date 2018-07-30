@@ -62,19 +62,23 @@ export default class Experience extends Component {
                         <li>Hands-on experience in React JS</li>
                         <li>Automation (Webpack), dependency management (npm, bower, yarn).</li>
                         <li>Working knowledge of email clients (ie: mailchimp etc), ability to create responsive emails.</li>
-                        <li>Integrating, recommending, discussing best practices in front-end web development also worked closely with third party suppliers.</li>
+                        <li>Integrating, recommending, discussing best practices in front-end web development.</li>
+                        <li>Working closely with third party suppliers to make sure code quality is up to standard.</li>
                         <li>Improving quality of front-end code by participating in code reviews.</li>
                         <li>Contributing to and maintaining front-end web development documentation.</li>
                     </ul>
+                    <hr/>
 
                     <h4>UI Developer <a href="https://www.linkedin.com/company/vinfotech" target="_blank" rel="noopener noreferrer">@Vinfotech</a></h4>
                     <p>{moment(this.state.vinfotech.startDate).format("MMM YYYY")} - {moment(this.state.vinfotech.endDate).format("MMM YYYY")} ({this.yearsMonths(this.state.vinfotech.startDate, this.state.vinfotech.endDate)}) <br/>Indore, India</p>
                     <p>Provided front-end production for selected clients including Social Network, Start-ups. Pushed client adoption of mobile support and CSS3 standards like media queries, Responsive Web design and @font-face, transformed complex, high quality PSD design into hand coded standards compliant HTML/CSS. Built a library of re-usable UI elements. Designed and effectively developed front-end of websites in a clean, well structured, easily maintainable format. Responsible for meeting expectations and deliverables on time and in high quality. Communicate effectively in both technical and business environments.</p>
 
+                    <hr/>
                     <h4>Web Designer <a href="http://kalptaru-infotech-ltd.software.informer.com/" target="_blank" rel="noopener noreferrer">@Kalptaru Infotech Ltd</a></h4>
                     <p>{moment(this.state.kalptaru.startDate).format("MMM YYYY")} - {moment(this.state.kalptaru.endDate).format("MMM YYYY")} ({this.yearsMonths(this.state.kalptaru.startDate, this.state.kalptaru.endDate)})<br />Indore, India</p>
                     <p>Experience managing in-house design, research, product management, front-end development and editing designs and able to build an innovative designs.</p>
 
+                    <hr/>
                     <h4>Graphic Designer <a href="https://www.linkedin.com/company/535573?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A751603211470410842026%2CVSRPtargetId%3A535573%2CVSRPcmpt%3Aprimary" target="_blank" rel="noopener noreferrer">@Naidunia Media Pvt Ltd</a></h4>
                     <p>{moment(this.state.naidunia.startDate).format("MMM YYYY")} - {moment(this.state.naidunia.endDate).format("MMM YYYY")} ({this.yearsMonths(this.state.naidunia.startDate, this.state.naidunia.endDate)})<br />Indore, India</p>
                     <p>Designed highly creative advertisement for newspaper industry.</p>

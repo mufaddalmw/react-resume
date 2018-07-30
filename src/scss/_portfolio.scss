@@ -1,5 +1,5 @@
 .swiper-container {
-    padding-bottom: 40px;
+    padding-bottom: rem-calc(40px);
 }
 .swiper-slide {
     position: relative;
@@ -23,7 +23,7 @@
         }
         .button {
             transition: all .3s ease;
-            height: 2px;
+            height: rem-calc(2px);
             overflow: hidden;
             padding-top: 0;
             padding-bottom: 0;
@@ -37,7 +37,7 @@
             background: rgba(36,36,36,.6);;
         }
         .button {
-            height: 50px;
+            height: rem-calc(50px);
             color: $white;
         }
         h2 {
