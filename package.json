@@ -2,7 +2,7 @@
   "name": "react-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://[your user name].github.io/[your repo name]/",
+  "homepage": "https://mufaddalmw.github.io/react-resume/",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
