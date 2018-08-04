@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import './index.scss';
-import Home from './pages/Home'
+import Home from './pages/home'
 import About from './pages/About'
 import Skills from './pages/Skills'
 import Education from './pages/Education'
