@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Swiper from 'swiper'
+import Swiper from '../../node_modules/swiper/dist/js/swiper'
 import img_rbbi from '../images/portfolio-rbbi.jpg'
 import img_adib from '../images/portfolio-adib.jpg'
 import img_ccad from '../images/portfolio-ccad.jpg'
