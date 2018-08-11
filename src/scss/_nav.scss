@@ -10,6 +10,10 @@
         a {
             padding: rem-calc(10px);
             display: block;
+            &.selected {
+              color: #B81146;
+              border-bottom: solid;  
+            }
         }
     }
     
