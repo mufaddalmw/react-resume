@@ -17,9 +17,14 @@ export default class Portfolio extends Component {
                 url: 'http://rbbideas.com'
             },
             {
-                title: 'Abu Dhabi Islamic Bank',
-                image: img_adib,
-                url: 'http://adib.ae'
+                title: 'Global Manufacturing & Industrialisation Summit',
+                image: img_gmis,
+                url: 'https://gmisummit.com'
+            },
+            {
+                title: 'Dubai Holding',
+                image: img_dubaiholding,
+                url: 'https://dubaiholding.com/en'
             },
             {
                 title: 'Cleveland Clinic Abu Dhabi',
@@ -32,14 +37,9 @@ export default class Portfolio extends Component {
                 url: 'https://www.famousbirthdays.com'
             },
             {
-                title: 'Dubai Holding',
-                image: img_dubaiholding,
-                url: 'https://dubaiholding.com/en'
-            },
-            {
-                title: 'Global Manufacturing & Industrialisation Summit',
-                image: img_gmis,
-                url: 'https://gmisummit.com'
+                title: 'Abu Dhabi Islamic Bank',
+                image: img_adib,
+                url: 'http://adib.ae'
             },
         ]
     }
@@ -52,6 +52,10 @@ export default class Portfolio extends Component {
                 el: '.swiper-pagination',
                 type: 'bullets',
                 clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             breakpoints: {
                 640: {
@@ -93,6 +97,8 @@ export default class Portfolio extends Component {
                             }
                         </div>
                         <div className="swiper-pagination"></div>
+                        <div className="swiper-button-prev"></div>
+                        <div className="swiper-button-next"></div>
                     </div>
                 </div>
             </React.Fragment>

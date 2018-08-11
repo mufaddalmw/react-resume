@@ -28,7 +28,7 @@ export default class PersonalDetails extends Component {
     render(){
         return(
             <ul>
-                <li><strong>Born:</strong> 19 May 1986 (age {this.state.age} years)</li>
+                <li><strong>Born:</strong> 19 May 1986 <small className="gray">(age {this.state.age} years)</small></li>
                 <li><strong>Nationality:</strong> Indian</li>
                 <li><strong>Languages:</strong> English (Professional), Hindi (Native), Arabic (Basic) </li>
                 <li><strong>Marital Status:</strong> Married</li>

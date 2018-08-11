@@ -18,7 +18,7 @@ export default class Home extends Component {
                             <img className="thumbnail" src={profilePic} srcSet={`${profilePic2x} 2x`} alt="Mufaddal Motorwala"/>
                         </div>
                         <div className="cell small-4 medium-4 large-2">
-                            <h1>Mufaddal Motorwala</h1>
+                            <h3>Mufaddal Motorwala</h3>
                             <p>Front-End Developer</p>
                         </div>
                     </div>

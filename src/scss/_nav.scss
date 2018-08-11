@@ -1,5 +1,6 @@
 .nav {
     list-style: none;
+    margin:0 10px;
 
     @include breakpoint(medium) {
         display: flex;
@@ -10,9 +11,17 @@
         a {
             padding: rem-calc(10px);
             display: block;
+            color: #888;
+            @include breakpoint(small only){
+                color: #fff;
+                opacity: .65;
+            }
             &.selected {
-              color: #B81146;
-              border-bottom: solid;  
+                opacity: 1;
+                border-bottom: solid;
+                @include breakpoint(medium){
+                    color: #B81146;
+              }
             }
         }
     }

@@ -11,9 +11,9 @@ export default class Skills extends Component {
                     <ul>
                         <li>HTML5/CSS3</li>
                         <li>SCSS, Stylus, BEM, Styled Components</li>
-                        <li>JavaScript, React js, jQuery</li>
+                        <li>JavaScript, React.js, jQuery</li>
                         <li>Foundation, Bootstrap</li>
-                        <li>Pug js (Templating)</li>
+                        <li>Pug.js (Templating)</li>
                         <li>Wordpress</li>
                         <li>Webpack</li>
                         <li>Git</li>
