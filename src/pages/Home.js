@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import profilePic from '../images/mufaddal.jpg'
 import profilePic2x from '../images/mufaddal@2x.jpg'
-import '../scss/_base.scss'
 import Header from '../components/Header'
 
 

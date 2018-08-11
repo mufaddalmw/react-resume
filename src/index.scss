@@ -1,11 +1,12 @@
 @import '../node_modules/foundation-sites/scss/foundation';
-@import './scss/_settings.scss';
+@import './scss/settings';
 @import '../node_modules/swiper/dist/css/swiper';
 @include foundation-global-styles;
 @include foundation-typography;
 @include foundation-xy-grid-classes;
 @include foundation-button;
 @include foundation-visibility-classes;
+@import './scss/base';
 @import './scss/portfolio';
 @import './scss/nav';
 @import './scss/header';
